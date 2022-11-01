@@ -6,14 +6,14 @@ import { HeaderText, HomeImg, ImgDiv } from "./Home.style";
 import homeSvg from "../../assets/home.svg";
 
 const Home = () => {
-  const apiKey = "654e7a3e84b3384f93779196b6c6ec82";
-  const appId = "46fc98d5";
+  const APP_ID = process.env.REACT_APP_APP_ID;
+  const APP_KEY = process.env.REACT_APP_APP_KEY;
   const [query, setQuery] = useState("egg");
   const [selectedMeal, setSelectedMeal] = useState("breakfast");
   const [recipes, setRecipes] = useState(null);
   const mealType = ["Breakfast", "Lunch", "Dinner", "Snack", "Teatime"];
 
-  const url = `https://api.edamam.com/search?q=${query}&app_id=${appId}&app_key=${apiKey}&mealType=${selectedMeal}`;
+  const url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&mealType=${selectedMeal}`;
 
   const getData = async () => {
     if (query) {
