@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, NavLink } from "react-router-dom";
 import "./Navbar.style";
 import Nav, { Brand, Menu, MenuLink, Hamburger } from "./Navbar.style";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -22,9 +22,9 @@ const Navbar = () => {
         <MenuLink to="/">Home</MenuLink>
         <MenuLink to="about">About</MenuLink>
 
-        <MenuLink to="login" onClick={() => sessionStorage.clear()}>
+        <NavLink to="/" onClick={() => sessionStorage.clear()}>
           Logout
-        </MenuLink>
+        </NavLink>
       </Menu>
     </Nav>
   );

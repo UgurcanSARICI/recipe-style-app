@@ -1,9 +1,7 @@
-import React from 'react'
-
+import React from "react";
+import { AboutDiv } from "./About.style";
 const About = () => {
-  return (
-    <div>About</div>
-  )
-}
+  return <AboutDiv>We are here for you</AboutDiv>;
+};
 
-export default About
+export default About;
