@@ -68,7 +68,7 @@ Recipe App (folder)
 
 ## Screenshot
 <p align="center">
-<a href="http://recipe-style-app.vercel.app/"><img src="contact_firebase.gif" alt="gif"></a>
+<a href="http://recipe-style-app.vercel.app/"><img src="recipe.gif" alt="gif"></a>
 </p>
 
 
